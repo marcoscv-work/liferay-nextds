@@ -1,0 +1,29 @@
+{
+    "pageElement": {
+        "pageElements": [
+            {
+                "definition": {
+                    "fragment": {"key": "nextds-site-header-dynamic"},
+                    "fragmentConfig": {},
+                    "fragmentFields": [],
+                    "indexed": true
+                },
+                "type": "Fragment"
+            },
+            {
+                "definition": {"fragmentSettings": {"unallowedFragments": []}},
+                "type": "DropZone"
+            },
+            {
+                "definition": {
+                    "fragment": {"key": "nextds-site-footer"},
+                    "fragmentConfig": {},
+                    "fragmentFields": [],
+                    "indexed": true
+                },
+                "type": "Fragment"
+            }
+        ],
+        "type": "Root"
+    }
+}

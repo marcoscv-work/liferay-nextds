@@ -1,0 +1,178 @@
+<div class="nextds-showcase">
+  <p class="nextds-showcase__intro">A quick visual reference of every NextDS component.</p>
+  <nav class="nextds-showcase__toc" aria-label="Components index">
+    <ul>
+      <li><a href="#cmp-buttons">Buttons</a></li>
+      <li><a href="#cmp-links">Links</a></li>
+      <li><a href="#cmp-badges">Badges &amp; tags</a></li>
+      <li><a href="#cmp-alerts">Alerts</a></li>
+      <li><a href="#cmp-card">Card</a></li>
+      <li><a href="#cmp-tile">Tile</a></li>
+      <li><a href="#cmp-accordion">Accordion</a></li>
+      <li><a href="#cmp-tabs">Tabs</a></li>
+      <li><a href="#cmp-breadcrumb">Breadcrumb</a></li>
+      <li><a href="#cmp-pagination">Pagination</a></li>
+      <li><a href="#cmp-forms">Forms</a></li>
+      <li><a href="#cmp-switch">Switch</a></li>
+      <li><a href="#cmp-tooltip">Tooltip</a></li>
+    </ul>
+  </nav>
+
+  <section id="cmp-buttons" class="nextds-showcase__section">
+    <h2 class="nextds-showcase__title">Buttons</h2>
+    <div class="nextds-showcase__group">
+      <a class="nextds-button nextds-button--primary nextds-button--md" href="#">Primary</a>
+      <a class="nextds-button nextds-button--secondary nextds-button--md" href="#">Secondary</a>
+      <a class="nextds-button nextds-button--ghost nextds-button--md" href="#">Ghost</a>
+      <a class="nextds-button nextds-button--success nextds-button--md" href="#">Success</a>
+      <a class="nextds-button nextds-button--danger nextds-button--md" href="#">Danger</a>
+    </div>
+  </section>
+
+  <section id="cmp-links" class="nextds-showcase__section">
+    <h2 class="nextds-showcase__title">Links</h2>
+    <div class="nextds-showcase__group">
+      <a class="nextds-link" href="#">Default link</a>
+      <a class="nextds-link" href="#">Arrow link
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <section id="cmp-badges" class="nextds-showcase__section">
+    <h2 class="nextds-showcase__title">Badges &amp; tags</h2>
+    <div class="nextds-showcase__group">
+      <span class="nextds-badge nextds-badge--info">Info</span>
+      <span class="nextds-badge nextds-badge--success">Success</span>
+      <span class="nextds-badge nextds-badge--warning">Warning</span>
+      <span class="nextds-badge nextds-badge--danger">Danger</span>
+      <span class="nextds-badge nextds-badge--neutral">Neutral</span>
+      <span class="nextds-tag nextds-tag--default">Topic</span>
+      <span class="nextds-tag nextds-tag--neutral">Neutral</span>
+      <span class="nextds-tag nextds-tag--selected">Selected</span>
+    </div>
+  </section>
+
+  <section id="cmp-alerts" class="nextds-showcase__section">
+    <h2 class="nextds-showcase__title">Alerts</h2>
+    <div class="nextds-alert nextds-alert--info"><span class="nextds-alert__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="11" x2="12" y2="17"/><circle cx="12" cy="7.5" r="0.6" fill="currentColor"/></svg></span><div class="nextds-alert__body"><h3 class="nextds-alert__title">Information</h3><p class="nextds-alert__text">A neutral message providing context.</p></div></div>
+    <div class="nextds-alert nextds-alert--success"><span class="nextds-alert__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div class="nextds-alert__body"><h3 class="nextds-alert__title">Success</h3><p class="nextds-alert__text">Your action was completed.</p></div></div>
+    <div class="nextds-alert nextds-alert--warning"><span class="nextds-alert__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><circle cx="12" cy="17" r="0.6" fill="currentColor"/></svg></span><div class="nextds-alert__body"><h3 class="nextds-alert__title">Warning</h3><p class="nextds-alert__text">Heads up — verify before continuing.</p></div></div>
+    <div class="nextds-alert nextds-alert--danger"><span class="nextds-alert__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg></span><div class="nextds-alert__body"><h3 class="nextds-alert__title">Danger</h3><p class="nextds-alert__text">Something went wrong. Please try again.</p></div></div>
+  </section>
+
+  <section id="cmp-card" class="nextds-showcase__section">
+    <h2 class="nextds-showcase__title">Card</h2>
+    <article class="nextds-card" style="max-width:24rem">
+      <div class="nextds-card__media"><img src="[resources:illustration-card.svg]" alt="" width="320" height="180"/></div>
+      <div class="nextds-card__body">
+        <p class="nextds-card__tags"><span class="nextds-tag nextds-tag--default">Topic</span></p>
+        <h3 class="nextds-card__title"><a class="nextds-card__link" href="#">An article title goes here</a></h3>
+        <p class="nextds-card__text">A short summary helps the visitor decide.</p>
+        <p class="nextds-card__meta">Published on 14 May 2026</p>
+      </div>
+    </article>
+  </section>
+
+  <section id="cmp-tile" class="nextds-showcase__section">
+    <h2 class="nextds-showcase__title">Tile</h2>
+    <div class="nextds-tile" style="max-width:24rem">
+      <div class="nextds-tile__media"><img class="nextds-tile__icon" src="[resources:illustration-tile.svg]" alt="" width="80" height="80"/></div>
+      <div class="nextds-tile__body">
+        <h3 class="nextds-tile__title"><a class="nextds-tile__link" href="#">A service or feature</a></h3>
+        <p class="nextds-tile__desc">A short description.</p>
+      </div>
+      <svg class="nextds-tile__arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+    </div>
+  </section>
+
+  <section id="cmp-accordion" class="nextds-showcase__section">
+    <h2 class="nextds-showcase__title">Accordion</h2>
+    <div class="nextds-accordion">
+      <details class="nextds-accordion__item" open>
+        <summary class="nextds-accordion__btn">
+          <span class="nextds-accordion__label">Accordion item — open</span>
+          <svg class="nextds-accordion__icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="nextds-accordion__panel"><p>Hidden content revealed on demand.</p></div>
+      </details>
+      <details class="nextds-accordion__item">
+        <summary class="nextds-accordion__btn">
+          <span class="nextds-accordion__label">Accordion item — closed</span>
+          <svg class="nextds-accordion__icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="nextds-accordion__panel"><p>Hidden content revealed on demand.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <section id="cmp-tabs" class="nextds-showcase__section">
+    <h2 class="nextds-showcase__title">Tabs</h2>
+    <div class="nextds-tabs">
+      <ul class="nextds-tabs__list" role="tablist">
+        <li><button class="nextds-tabs__tab" role="tab" aria-selected="true">Tab one</button></li>
+        <li><button class="nextds-tabs__tab" role="tab" aria-selected="false">Tab two</button></li>
+        <li><button class="nextds-tabs__tab" role="tab" aria-selected="false">Tab three</button></li>
+      </ul>
+      <div class="nextds-tabs__panel" role="tabpanel"><p>Panel content for tab one.</p></div>
+    </div>
+  </section>
+
+  <section id="cmp-breadcrumb" class="nextds-showcase__section">
+    <h2 class="nextds-showcase__title">Breadcrumb</h2>
+    <nav class="nextds-breadcrumb" aria-label="You are here:">
+      <ol class="nextds-breadcrumb__list">
+        <li class="nextds-breadcrumb__item"><a href="/">Home</a></li>
+        <li class="nextds-breadcrumb__item"><a href="#">Components</a></li>
+        <li class="nextds-breadcrumb__item nextds-breadcrumb__item--current" aria-current="page"><span>Breadcrumb</span></li>
+      </ol>
+    </nav>
+  </section>
+
+  <section id="cmp-pagination" class="nextds-showcase__section">
+    <h2 class="nextds-showcase__title">Pagination</h2>
+    <nav class="nextds-pagination" aria-label="Pagination">
+      <ul class="nextds-pagination__list">
+        <li><a class="nextds-pagination__link nextds-pagination__link--prev" href="#">‹ Previous</a></li>
+        <li><a class="nextds-pagination__link" href="#">1</a></li>
+        <li><a class="nextds-pagination__link nextds-pagination__link--current" href="#" aria-current="page">2</a></li>
+        <li><a class="nextds-pagination__link" href="#">3</a></li>
+        <li><a class="nextds-pagination__link nextds-pagination__link--next" href="#">Next ›</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section id="cmp-forms" class="nextds-showcase__section">
+    <h2 class="nextds-showcase__title">Forms</h2>
+    <div class="nextds-input-group">
+      <label class="nextds-label" for="sc-input">Full name</label>
+      <p class="nextds-hint">As shown on your official document.</p>
+      <input id="sc-input" class="nextds-input" type="text"/>
+    </div>
+    <div class="nextds-input-group">
+      <label class="nextds-label" for="sc-select">Option</label>
+      <div class="nextds-select-wrap">
+        <select id="sc-select" class="nextds-select"><option>Option A</option><option>Option B</option><option>Option C</option></select>
+      </div>
+    </div>
+  </section>
+
+  <section id="cmp-switch" class="nextds-showcase__section">
+    <h2 class="nextds-showcase__title">Switch</h2>
+    <div class="nextds-toggle">
+      <input class="nextds-toggle__input" type="checkbox" id="sc-sw" checked/>
+      <label class="nextds-toggle__label" for="sc-sw">Enable notifications</label>
+      <p class="nextds-toggle__hint">Receive monthly updates.</p>
+    </div>
+  </section>
+
+  <section id="cmp-tooltip" class="nextds-showcase__section">
+    <h2 class="nextds-showcase__title">Tooltip</h2>
+    <div class="nextds-showcase__group">
+      <span class="nextds-tooltip-host">
+        <button type="button" class="nextds-tooltip-trigger" aria-describedby="sc-tip">Hover or focus me</button>
+        <span class="nextds-tooltip" id="sc-tip" role="tooltip">Helpful tooltip text.</span>
+      </span>
+    </div>
+  </section>
+</div>

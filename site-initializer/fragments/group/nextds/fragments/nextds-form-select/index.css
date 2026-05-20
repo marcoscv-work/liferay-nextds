@@ -1,0 +1,30 @@
+.nextds-input-group { margin-block: 1rem; }
+.nextds-label { display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--color-text, #333333); }
+.nextds-label__required { color: var(--color-danger, #E60000); }
+.nextds-hint  { margin: 0 0 0.5rem; font-size: 0.875rem; color: var(--color-text-muted, #555555); }
+.nextds-select-wrap { position: relative; max-width: 28rem; }
+.nextds-select-wrap::after {
+  content: ""; position: absolute; right: 0.75rem; top: 50%;
+  width: 0; height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid var(--color-text, #333333);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.nextds-select {
+  display: block; width: 100%;
+  font-family: inherit; font-size: 1rem; line-height: 1.5;
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  border: 1px solid var(--color-border-strong, #888888);
+  border-radius: var(--nextds-radius, 4px);
+  background-color: var(--color-bg, #FFFFFF);
+  color: var(--color-text, #333333);
+  box-sizing: border-box; appearance: none;
+}
+.nextds-select:hover { border-color: var(--color-text-muted, #555555); }
+.nextds-select:focus {
+  outline: var(--nextds-focus-width, 4px) var(--nextds-focus-style, dashed) var(--nextds-focus-color, #C98C00);
+  outline-offset: 0;
+  border-color: var(--color-text, #333333);
+}

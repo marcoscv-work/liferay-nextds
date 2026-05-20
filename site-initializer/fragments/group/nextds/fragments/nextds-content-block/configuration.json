@@ -1,0 +1,12 @@
+{
+    "fieldSets": [
+        {
+            "label": "Content block",
+            "fields": [
+                {"defaultValue": "true", "label": "Show meta",         "name": "showMeta",  "type": "checkbox"},
+                {"defaultValue": "true", "label": "Show description",  "name": "showDesc",  "type": "checkbox"},
+                {"defaultValue": "true", "label": "Show tag",          "name": "showTag",   "type": "checkbox"}
+            ]
+        }
+    ]
+}

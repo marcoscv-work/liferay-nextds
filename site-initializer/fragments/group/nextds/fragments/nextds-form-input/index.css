@@ -1,0 +1,40 @@
+.nextds-input-group { margin-block: 1rem; }
+.nextds-label {
+  display: block; font-weight: 600; margin-bottom: 0.5rem;
+  color: var(--color-text, #333333);
+}
+.nextds-label__required { color: var(--color-danger, #E60000); }
+.nextds-hint  {
+  margin: 0 0 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted, #555555);
+}
+.nextds-input {
+  display: block; width: 100%; max-width: 28rem;
+  font-family: inherit; font-size: 1rem; line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-border-strong, #888888);
+  border-radius: var(--nextds-radius, 4px);
+  background-color: var(--color-bg, #FFFFFF);
+  color: var(--color-text, #333333);
+  box-sizing: border-box;
+  appearance: none; box-shadow: none;
+}
+.nextds-input::placeholder { color: var(--nextds-pure-50, #888888); opacity: 1; }
+.nextds-input:hover { border-color: var(--color-text-muted, #555555); }
+.nextds-input:focus,
+.nextds-input:focus-visible {
+  outline: var(--nextds-focus-width, 4px) var(--nextds-focus-style, dashed) var(--nextds-focus-color, #C98C00);
+  outline-offset: 0;
+  border-color: var(--color-text, #333333);
+}
+.nextds-error {
+  margin: 0.375rem 0 0;
+  color: var(--color-danger, #E60000);
+  font-size: 0.875rem; font-weight: 600;
+}
+.nextds-input-group--error .nextds-input {
+  border-color: var(--color-danger, #E60000);
+  background-color: var(--color-danger-bg, #FDECEA);
+}
+.nextds-input-group--error .nextds-label { color: var(--color-danger, #E60000); }

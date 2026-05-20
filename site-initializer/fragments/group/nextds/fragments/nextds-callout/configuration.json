@@ -1,0 +1,10 @@
+{
+    "fieldSets": [
+        {
+            "label": "Callout",
+            "fields": [
+                {"defaultValue": "true", "label": "Show button", "name": "showButton", "type": "checkbox"}
+            ]
+        }
+    ]
+}

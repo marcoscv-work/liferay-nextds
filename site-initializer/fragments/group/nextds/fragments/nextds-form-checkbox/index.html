@@ -1,0 +1,13 @@
+<fieldset class="nextds-fieldset">
+  <legend class="nextds-legend">
+    <span data-lfr-editable-id="legend" data-lfr-editable-type="text">Select your interests</span>
+  </legend>
+  [#if configuration.showHint]
+    <p class="nextds-hint" data-lfr-editable-id="hint" data-lfr-editable-type="text">Select all that apply.</p>
+  [/#if]
+  <div class="nextds-options">
+    <label class="nextds-check"><input type="checkbox" name="topics" value="a"/><span>Option A</span></label>
+    <label class="nextds-check"><input type="checkbox" name="topics" value="b"/><span>Option B</span></label>
+    <label class="nextds-check"><input type="checkbox" name="topics" value="c"/><span>Option C</span></label>
+  </div>
+</fieldset>

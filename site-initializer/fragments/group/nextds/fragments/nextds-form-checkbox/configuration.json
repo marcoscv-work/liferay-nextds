@@ -1,0 +1,3 @@
+{"fieldSets": [{"label": "Checkbox group", "fields": [
+    {"defaultValue": "true", "label": "Show hint", "name": "showHint", "type": "checkbox"}
+]}]}

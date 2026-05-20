@@ -1,0 +1,40 @@
+{
+    "fieldSets": [
+        {
+            "label": "Button",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "primary",
+                    "label": "Variant",
+                    "name": "variant",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "primary",   "label": "Primary (.nextds-button--primary)"},
+                            {"value": "secondary", "label": "Secondary (.nextds-button--secondary)"},
+                            {"value": "ghost",     "label": "Ghost (.nextds-button--ghost)"},
+                            {"value": "success",   "label": "Success (.nextds-button--success)"},
+                            {"value": "danger",    "label": "Danger (.nextds-button--danger)"}
+                        ]
+                    }
+                },
+                {
+                    "dataType": "string",
+                    "defaultValue": "md",
+                    "label": "Size",
+                    "name": "size",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "sm", "label": "Small"},
+                            {"value": "md", "label": "Medium"},
+                            {"value": "lg", "label": "Large"}
+                        ]
+                    }
+                },
+                {"defaultValue": "false", "label": "Disabled", "name": "disabled", "type": "checkbox"}
+            ]
+        }
+    ]
+}

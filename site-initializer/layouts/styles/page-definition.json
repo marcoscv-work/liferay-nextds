@@ -1,0 +1,55 @@
+{
+    "settings": {"masterPage": {"key": "main"}},
+    "pageElement": {
+        "type": "Root",
+        "pageElements": [
+            {
+                "type": "Section",
+                "definition": {"indexed": true, "layout": {"widthType": "Fixed"}},
+                "pageElements": [
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "nextds-breadcrumb"},
+                            "fragmentConfig": {},
+                            "fragmentFields": [
+                                {"value": {"text": {"value_i18n": {"en_US": "Home"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Design system"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Styles"}}, "fragmentLink": {}}}
+                            ],
+                            "indexed": true
+                        }
+                    },
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "nextds-page-header"},
+                            "fragmentConfig": {"showCategory": true, "showLead": true},
+                            "fragmentFields": [
+                                {"value": {"text": {"value_i18n": {"en_US": "Design system"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Styles"}}, "fragmentLink": {}}},
+                                {"value": {"text": {"value_i18n": {"en_US": "Visual foundations of the NextDS — colour palette, typography, spacing scale and the dashed focus indicator."}}, "fragmentLink": {}}}
+                            ],
+                            "indexed": true
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "Section",
+                "definition": {"cssClasses": ["nextds-section--py-md"], "indexed": true, "layout": {"widthType": "Fixed"}},
+                "pageElements": [
+                    {
+                        "type": "Fragment",
+                        "definition": {
+                            "fragment": {"key": "nextds-styles-showcase"},
+                            "fragmentConfig": {"showColors": true, "showTypo": true, "showSpace": true, "showFocus": true},
+                            "fragmentFields": [],
+                            "indexed": true
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

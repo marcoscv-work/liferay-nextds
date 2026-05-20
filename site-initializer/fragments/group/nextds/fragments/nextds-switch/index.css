@@ -1,0 +1,58 @@
+.nextds-toggle {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  margin-block: 1rem;
+}
+.nextds-toggle__input {
+  position: absolute;
+  width: 2.5rem; height: 1.5rem;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.nextds-toggle__label {
+  grid-column: 2;
+  font-weight: 600;
+  color: var(--color-text, #333333);
+  cursor: pointer;
+  user-select: none;
+  line-height: 1.5;
+}
+.nextds-toggle__label::before,
+.nextds-toggle__label::after {
+  content: "";
+  position: absolute;
+  left: 0; top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.nextds-toggle__label::before {
+  width: 2.5rem; height: 1.5rem;
+  border-radius: var(--nextds-radius-pill, 100em);
+  background-color: var(--color-border, #CCCCCC);
+  transition: background-color 0.15s ease;
+}
+.nextds-toggle__label::after {
+  width: 1rem; height: 1rem;
+  border-radius: 50%;
+  background-color: var(--color-bg, #FFFFFF);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  left: 0.25rem;
+  transition: left 0.15s ease;
+}
+.nextds-toggle__input:checked + .nextds-toggle__label::before { background-color: var(--color-brand, #1351B4); }
+.nextds-toggle__input:checked + .nextds-toggle__label::after  { left: 1.25rem; }
+.nextds-toggle__input:focus-visible + .nextds-toggle__label::before {
+  outline: var(--nextds-focus-width, 4px) var(--nextds-focus-style, dashed) var(--nextds-focus-color, #C98C00);
+  outline-offset: var(--nextds-focus-offset, 4px);
+}
+.nextds-toggle__hint {
+  grid-column: 2;
+  margin: 0;
+  color: var(--color-text-muted, #555555);
+  font-size: 0.875rem;
+}

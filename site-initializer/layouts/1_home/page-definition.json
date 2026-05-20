@@ -1,0 +1,430 @@
+{
+  "settings": {
+    "masterPage": {
+      "key": "main"
+    }
+  },
+  "pageElement": {
+    "pageElements": [
+      {
+        "definition": {
+          "fragment": {
+            "key": "nextds-hero"
+          },
+          "fragmentConfig": {
+            "showCta": true,
+            "variant": "default",
+            "showDesc": true,
+            "showCta2": true,
+            "showImage": true
+          },
+          "fragmentFields": [
+            {
+              "id": "cta-label",
+              "value": {
+                "fragmentLink": {}
+              }
+            },
+            {
+              "id": "eyebrow",
+              "value": {
+                "fragmentLink": {}
+              }
+            },
+            {
+              "id": "cta2-label",
+              "value": {
+                "fragmentLink": {}
+              }
+            },
+            {
+              "id": "description",
+              "value": {
+                "fragmentLink": {}
+              }
+            },
+            {
+              "id": "title",
+              "value": {
+                "fragmentLink": {}
+              }
+            },
+            {
+              "id": "hero-image",
+              "value": {
+                "fragmentImage": {
+                  "url": {
+                    "value_i18n": {}
+                  }
+                },
+                "fragmentLink": {}
+              }
+            },
+            {
+              "id": "cta-link",
+              "value": {
+                "fragmentLink": {
+                  "value": {
+                    "href": {
+                      "value": "#"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "id": "cta2-link",
+              "value": {
+                "fragmentLink": {
+                  "value": {
+                    "href": {
+                      "value": "#"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "indexed": true
+        },
+        "type": "Fragment"
+      },
+      {
+        "definition": {
+          "cssClasses": [
+            "nextds-section--py-md",
+            "nextds-section--bg-alt"
+          ],
+          "fragmentStyle": {
+            "paddingBottom": "5",
+            "paddingTop": "5"
+          },
+          "indexed": true,
+          "layout": {
+            "paddingBottom": 4,
+            "paddingTop": 4,
+            "widthType": "Fixed"
+          }
+        },
+        "pageElements": [
+          {
+            "definition": {
+              "gutters": true,
+              "indexed": true,
+              "modulesPerRow": 3,
+              "numberOfColumns": 3,
+              "reverseOrder": false,
+              "rowViewports": [
+                {
+                  "id": "landscapeMobile",
+                  "rowViewportDefinition": {}
+                },
+                {
+                  "id": "portraitMobile",
+                  "rowViewportDefinition": {}
+                },
+                {
+                  "id": "tablet",
+                  "rowViewportDefinition": {}
+                }
+              ],
+              "verticalAlignment": "top"
+            },
+            "pageElements": [
+              {
+                "definition": {
+                  "columnViewports": [
+                    {
+                      "columnViewportDefinition": {},
+                      "id": "landscapeMobile"
+                    },
+                    {
+                      "columnViewportDefinition": {},
+                      "id": "portraitMobile"
+                    },
+                    {
+                      "columnViewportDefinition": {},
+                      "id": "tablet"
+                    }
+                  ],
+                  "size": 4
+                },
+                "pageElements": [
+                  {
+                    "definition": {
+                      "fragment": {
+                        "key": "nextds-tile"
+                      },
+                      "fragmentConfig": {
+                        "showDesc": true
+                      },
+                      "fragmentFields": [
+                        {
+                          "id": "title-link",
+                          "value": {
+                            "fragmentLink": {
+                              "value": {
+                                "href": {
+                                  "value": "#"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "id": "title",
+                          "value": {
+                            "fragmentLink": {}
+                          }
+                        },
+                        {
+                          "id": "tile-image",
+                          "value": {
+                            "fragmentImage": {
+                              "url": {
+                                "value_i18n": {}
+                              }
+                            },
+                            "fragmentLink": {}
+                          }
+                        },
+                        {
+                          "id": "desc",
+                          "value": {
+                            "fragmentLink": {}
+                          }
+                        }
+                      ],
+                      "indexed": true
+                    },
+                    "type": "Fragment"
+                  }
+                ],
+                "type": "Column"
+              },
+              {
+                "definition": {
+                  "columnViewports": [
+                    {
+                      "columnViewportDefinition": {},
+                      "id": "landscapeMobile"
+                    },
+                    {
+                      "columnViewportDefinition": {},
+                      "id": "portraitMobile"
+                    },
+                    {
+                      "columnViewportDefinition": {},
+                      "id": "tablet"
+                    }
+                  ],
+                  "size": 4
+                },
+                "pageElements": [
+                  {
+                    "definition": {
+                      "fragment": {
+                        "key": "nextds-tile"
+                      },
+                      "fragmentConfig": {
+                        "showDesc": true
+                      },
+                      "fragmentFields": [
+                        {
+                          "id": "title-link",
+                          "value": {
+                            "fragmentLink": {
+                              "value": {
+                                "href": {
+                                  "value": "#"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "id": "title",
+                          "value": {
+                            "fragmentLink": {}
+                          }
+                        },
+                        {
+                          "id": "tile-image",
+                          "value": {
+                            "fragmentImage": {
+                              "url": {
+                                "value_i18n": {}
+                              }
+                            },
+                            "fragmentLink": {}
+                          }
+                        },
+                        {
+                          "id": "desc",
+                          "value": {
+                            "fragmentLink": {}
+                          }
+                        }
+                      ],
+                      "indexed": true
+                    },
+                    "type": "Fragment"
+                  }
+                ],
+                "type": "Column"
+              },
+              {
+                "definition": {
+                  "columnViewports": [
+                    {
+                      "columnViewportDefinition": {},
+                      "id": "landscapeMobile"
+                    },
+                    {
+                      "columnViewportDefinition": {},
+                      "id": "portraitMobile"
+                    },
+                    {
+                      "columnViewportDefinition": {},
+                      "id": "tablet"
+                    }
+                  ],
+                  "size": 4
+                },
+                "pageElements": [
+                  {
+                    "definition": {
+                      "fragment": {
+                        "key": "nextds-tile"
+                      },
+                      "fragmentConfig": {
+                        "showDesc": true
+                      },
+                      "fragmentFields": [
+                        {
+                          "id": "title-link",
+                          "value": {
+                            "fragmentLink": {
+                              "value": {
+                                "href": {
+                                  "value": "#"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "id": "title",
+                          "value": {
+                            "fragmentLink": {}
+                          }
+                        },
+                        {
+                          "id": "tile-image",
+                          "value": {
+                            "fragmentImage": {
+                              "url": {
+                                "value_i18n": {}
+                              }
+                            },
+                            "fragmentLink": {}
+                          }
+                        },
+                        {
+                          "id": "desc",
+                          "value": {
+                            "fragmentLink": {}
+                          }
+                        }
+                      ],
+                      "indexed": true
+                    },
+                    "type": "Fragment"
+                  }
+                ],
+                "type": "Column"
+              }
+            ],
+            "type": "Row"
+          }
+        ],
+        "type": "Section"
+      },
+      {
+        "definition": {
+          "cssClasses": [
+            "nextds-section--py-md"
+          ],
+          "indexed": true,
+          "layout": {
+            "widthType": "Fixed"
+          }
+        },
+        "pageElements": [
+          {
+            "definition": {
+              "fragment": {
+                "key": "nextds-alert"
+              },
+              "fragmentConfig": {
+                "showTitle": true,
+                "closable": true,
+                "type": "success"
+              },
+              "fragmentFields": [
+                {
+                  "id": "alert-text",
+                  "value": {
+                    "fragmentLink": {}
+                  }
+                },
+                {
+                  "id": "alert-title",
+                  "value": {
+                    "fragmentLink": {}
+                  }
+                }
+              ],
+              "indexed": true
+            },
+            "type": "Fragment"
+          },
+          {
+            "definition": {
+              "fragment": {
+                "key": "nextds-quote"
+              },
+              "fragmentConfig": {
+                "showAuthor": true
+              },
+              "fragmentFields": [
+                {
+                  "id": "quote",
+                  "value": {
+                    "fragmentLink": {}
+                  }
+                },
+                {
+                  "id": "author-name",
+                  "value": {
+                    "fragmentLink": {}
+                  }
+                },
+                {
+                  "id": "author-role",
+                  "value": {
+                    "fragmentLink": {}
+                  }
+                }
+              ],
+              "indexed": true
+            },
+            "type": "Fragment"
+          }
+        ],
+        "type": "Section"
+      }
+    ],
+    "type": "Root"
+  }
+}

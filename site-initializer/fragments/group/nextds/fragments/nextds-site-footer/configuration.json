@@ -1,0 +1,12 @@
+{
+    "fieldSets": [
+        {
+            "label": "Footer",
+            "fields": [
+                {"defaultValue": "true", "label": "Show contact column",      "name": "showContact", "type": "checkbox"},
+                {"defaultValue": "true", "label": "Show resources column",    "name": "showResources","type": "checkbox"},
+                {"defaultValue": "true", "label": "Show legal column",        "name": "showLegal",   "type": "checkbox"}
+            ]
+        }
+    ]
+}

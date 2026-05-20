@@ -1,0 +1,11 @@
+{
+    "fieldSets": [
+        {
+            "label": "Page header",
+            "fields": [
+                {"defaultValue": "true", "label": "Show category", "name": "showCategory", "type": "checkbox"},
+                {"defaultValue": "true", "label": "Show lead",     "name": "showLead",     "type": "checkbox"}
+            ]
+        }
+    ]
+}

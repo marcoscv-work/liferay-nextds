@@ -1,0 +1,35 @@
+.nextds-tooltip-host { position: relative; display: inline-flex; }
+.nextds-tooltip-trigger {
+  display: inline-flex; align-items: center; gap: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  background-color: transparent;
+  border: 1px dashed var(--color-brand, #1351B4);
+  color: var(--color-brand, #1351B4);
+  cursor: help;
+  font: inherit; font-weight: 600;
+  border-radius: var(--nextds-radius, 4px);
+}
+.nextds-tooltip-trigger:hover { background-color: var(--color-bg-brand-tint, #DDEFF2); }
+.nextds-tooltip {
+  position: absolute;
+  left: 50%; bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+  background-color: var(--color-brand-hover, #0C326F);
+  color: var(--color-text-inverse, #FFFFFF);
+  padding: 0.375rem 0.625rem;
+  font-size: 0.875rem;
+  border-radius: var(--nextds-radius, 4px);
+  white-space: nowrap;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: 10;
+}
+.nextds-tooltip::after {
+  content: "";
+  position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--color-brand-hover, #0C326F);
+}
+.nextds-tooltip-trigger:hover + .nextds-tooltip,
+.nextds-tooltip-trigger:focus + .nextds-tooltip,
+.nextds-tooltip-trigger:focus-visible + .nextds-tooltip { opacity: 1; pointer-events: auto; }

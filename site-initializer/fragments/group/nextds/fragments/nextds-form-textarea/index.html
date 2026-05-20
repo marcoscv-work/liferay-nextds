@@ -1,0 +1,10 @@
+<div class="nextds-input-group">
+  <label class="nextds-label" for="nextds-textarea">
+    <span data-lfr-editable-id="label" data-lfr-editable-type="text">Your message</span>
+    [#if configuration.required]<span class="nextds-label__required" aria-hidden="true"> *</span>[/#if]
+  </label>
+  [#if configuration.showHint]
+    <p class="nextds-hint" data-lfr-editable-id="hint" data-lfr-editable-type="text">Describe your request in a few lines.</p>
+  [/#if]
+  <textarea id="nextds-textarea" class="nextds-textarea" rows="5" [#if configuration.required]required[/#if]></textarea>
+</div>

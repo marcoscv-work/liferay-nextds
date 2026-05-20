@@ -1,0 +1,7 @@
+.nextds-fieldset { border: 0; padding: 0; margin-block: 1rem; min-inline-size: 0; }
+.nextds-legend { display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--color-text, #333333); padding: 0; }
+.nextds-hint { margin: 0 0 0.5rem; font-size: 0.875rem; color: var(--color-text-muted, #555555); }
+.nextds-options { display: flex; flex-direction: column; gap: 0.5rem; }
+.nextds-check { display: inline-flex; align-items: center; gap: 0.75rem; cursor: pointer; }
+.nextds-check input { width: 1.125rem; height: 1.125rem; accent-color: var(--color-brand, #1351B4); margin: 0; }
+.nextds-check span { color: var(--color-text, #333333); }

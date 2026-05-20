@@ -1,0 +1,11 @@
+{
+    "fieldSets": [
+        {
+            "label": "Dynamic site header",
+            "fields": [
+                {"defaultValue": "true",  "label": "Show search bar",       "name": "showSearch", "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show sign in / sign out", "name": "showSignIn", "type": "checkbox"}
+            ]
+        }
+    ]
+}

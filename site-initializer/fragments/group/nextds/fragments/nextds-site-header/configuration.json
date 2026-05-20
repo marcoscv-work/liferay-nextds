@@ -1,0 +1,11 @@
+{
+    "fieldSets": [
+        {
+            "label": "Header",
+            "fields": [
+                {"defaultValue": "true",  "label": "Show search bar",   "name": "showSearch", "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show account link", "name": "showAccount","type": "checkbox"}
+            ]
+        }
+    ]
+}

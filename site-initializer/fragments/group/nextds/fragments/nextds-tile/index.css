@@ -1,0 +1,32 @@
+/* NextDS Tile — clickable action item with leading icon + trailing arrow */
+.nextds-tile {
+  position: relative;
+  display: flex; align-items: center; gap: 1rem;
+  padding: 1.25rem;
+  background-color: var(--color-bg, #FFFFFF);
+  border: 1px solid var(--color-border, #CCCCCC);
+  border-radius: var(--nextds-radius, 4px);
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.nextds-tile:hover {
+  background-color: var(--color-bg-brand-tint, #DDEFF2);
+  border-color: var(--nextds-primary-lighter, #C5D4EB);
+}
+.nextds-tile__media { flex: 0 0 auto; }
+.nextds-tile__icon  { display: block; width: 4rem; height: 4rem; }
+.nextds-tile__body  { flex: 1 1 auto; min-width: 0; }
+.nextds-tile__title {
+  margin: 0 0 0.25rem; font-size: 1.125rem; font-weight: 700;
+  color: var(--color-text, #333333);
+}
+.nextds-tile__link  { color: inherit; text-decoration: none; }
+.nextds-tile__link:visited { color: inherit; }
+.nextds-tile__link::after { content: ""; position: absolute; inset: 0; }
+.nextds-tile:hover .nextds-tile__link { color: var(--color-brand-hover, #0C326F); text-decoration: underline; }
+.nextds-tile__desc  { margin: 0; color: var(--color-text, #333333); font-size: 0.9375rem; }
+.nextds-tile__arrow {
+  flex: 0 0 auto;
+  color: var(--color-brand, #1351B4);
+  transition: transform 0.15s ease;
+}
+.nextds-tile:hover .nextds-tile__arrow { transform: translateX(3px); }

@@ -1,0 +1,9 @@
+nextds-theme:
+    name: NextDS Theme
+    type: themeCSS
+    mainURL: index.css
+    frontendTokenDefinitionJSON: frontend-token-definition.json
+
+assemble:
+    - from: src
+      into: static

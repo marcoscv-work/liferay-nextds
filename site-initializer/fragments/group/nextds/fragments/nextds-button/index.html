@@ -1,0 +1,11 @@
+[#assign variant = configuration.variant!'primary' /]
+[#assign size = configuration.size!'md' /]
+[#assign cls = 'nextds-button nextds-button--' + variant + ' nextds-button--' + size /]
+
+<a class="${cls}"
+   href="#"
+   data-lfr-editable-id="btn-link"
+   data-lfr-editable-type="link"
+   [#if configuration.disabled]aria-disabled="true" tabindex="-1"[/#if]>
+  <span data-lfr-editable-id="btn-label" data-lfr-editable-type="text">Button</span>
+</a>

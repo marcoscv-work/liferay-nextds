@@ -1,0 +1,6 @@
+// Built manually from workspace root:
+//
+//   jar cfm build-scripts/nextds-site-initializer/build/libs/com.nextds.site.initializer-1.0.0.jar \
+//     /tmp/nextds-manifest.mf \
+//     -C . site-initializer -C . META-INF
+apply plugin: "java"

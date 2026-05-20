@@ -1,0 +1,26 @@
+{
+    "fieldSets": [
+        {
+            "label": "Alert",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "info",
+                    "label": "Type",
+                    "name": "type",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "info",    "label": "Information"},
+                            {"value": "success", "label": "Success"},
+                            {"value": "warning", "label": "Warning"},
+                            {"value": "danger",  "label": "Danger"}
+                        ]
+                    }
+                },
+                {"defaultValue": "true",  "label": "Show title", "name": "showTitle", "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Closable",   "name": "closable",  "type": "checkbox"}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "fieldSets": [
+        {
+            "label": "Link",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "none",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "none",     "label": "None"},
+                            {"value": "arrow",    "label": "Arrow (after)"},
+                            {"value": "external", "label": "External (after)"}
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "fieldSets": [
+        {
+            "label": "Text input",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "text",
+                    "label": "Input type",
+                    "name": "inputType",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "text",     "label": "Text"},
+                            {"value": "email",    "label": "Email"},
+                            {"value": "tel",      "label": "Telephone"},
+                            {"value": "url",      "label": "URL"},
+                            {"value": "password", "label": "Password"}
+                        ]
+                    }
+                },
+                {"defaultValue": "true",  "label": "Show hint",       "name": "showHint",   "type": "checkbox"},
+                {"defaultValue": "false", "label": "Show error state", "name": "showError", "type": "checkbox"},
+                {"defaultValue": "false", "label": "Required",         "name": "required",  "type": "checkbox"}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+/* === preview-workaround === */
+.nextds-clean-list { list-style: none; margin: 0; padding: 0; }
+/* === end === */
+
+.nextds-breadcrumb { padding-block: 0.75rem; font-size: 0.875rem; }
+.nextds-breadcrumb__list { display: flex; flex-wrap: wrap; gap: 0.25rem 0.5rem; align-items: center; }
+.nextds-breadcrumb__item { display: inline-flex; align-items: center; gap: 0.5rem; }
+.nextds-breadcrumb__item + .nextds-breadcrumb__item::before {
+  content: "›";
+  color: var(--nextds-pure-50, #888888);
+  font-size: 1rem; line-height: 1;
+}
+.nextds-breadcrumb__item a {
+  color: var(--color-link, #1351B4);
+  text-decoration: none;
+}
+.nextds-breadcrumb__item a:visited { color: var(--color-link, #1351B4); }
+.nextds-breadcrumb__item a:hover   { color: var(--color-link-hover, #0C326F); text-decoration: underline; }
+.nextds-breadcrumb__item--current { color: var(--color-text-muted, #555555); font-weight: 600; }

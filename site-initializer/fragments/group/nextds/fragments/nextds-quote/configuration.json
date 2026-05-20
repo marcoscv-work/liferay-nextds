@@ -1,0 +1,10 @@
+{
+    "fieldSets": [
+        {
+            "label": "Quote",
+            "fields": [
+                {"defaultValue": "true",  "label": "Show author block", "name": "showAuthor", "type": "checkbox"}
+            ]
+        }
+    ]
+}

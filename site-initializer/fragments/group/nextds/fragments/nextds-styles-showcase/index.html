@@ -1,0 +1,82 @@
+<div class="nextds-styles">
+  [#if configuration.showColors]
+    <section class="nextds-styles__section">
+      <h2 class="nextds-styles__heading">Colour palette</h2>
+      <p class="nextds-styles__text">NextDS uses a blue + green primary pair with a yellow accent.</p>
+
+      <h3 class="nextds-styles__sub">Brand</h3>
+      <ul class="nextds-styles__swatches">
+        <li><span class="nextds-styles__chip" style="background:#1351B4"></span><span>Primary<br/><code>#1351B4</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#0C326F"></span><span>Primary dark<br/><code>#0C326F</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#2670E8"></span><span>Primary light<br/><code>#2670E8</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#DDEFF2"></span><span>Primary alt<br/><code>#DDEFF2</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#168821"></span><span>Secondary<br/><code>#168821</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#FFCD07"></span><span>Highlight<br/><code>#FFCD07</code></span></li>
+      </ul>
+
+      <h3 class="nextds-styles__sub">Greys</h3>
+      <ul class="nextds-styles__swatches">
+        <li><span class="nextds-styles__chip nextds-styles__chip--border" style="background:#FFFFFF"></span><span>White<br/><code>#FFFFFF</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#F8F8F8"></span><span>Pure 1<br/><code>#F8F8F8</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#EDEDED"></span><span>Pure 5<br/><code>#EDEDED</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#CCCCCC"></span><span>Pure 20<br/><code>#CCCCCC</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#888888"></span><span>Pure 50<br/><code>#888888</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#555555"></span><span>Pure 70<br/><code>#555555</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#333333"></span><span>Pure 80<br/><code>#333333</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#000000"></span><span>Pure 100<br/><code>#000000</code></span></li>
+      </ul>
+
+      <h3 class="nextds-styles__sub">Feedback</h3>
+      <ul class="nextds-styles__swatches">
+        <li><span class="nextds-styles__chip" style="background:#168821"></span><span>Success<br/><code>#168821</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#155BCB"></span><span>Info<br/><code>#155BCB</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#F2A60D"></span><span>Warning<br/><code>#F2A60D</code></span></li>
+        <li><span class="nextds-styles__chip" style="background:#E60000"></span><span>Danger<br/><code>#E60000</code></span></li>
+      </ul>
+    </section>
+  [/#if]
+
+  [#if configuration.showTypo]
+    <section class="nextds-styles__section">
+      <h2 class="nextds-styles__heading">Typography</h2>
+      <p class="nextds-styles__text">Base typeface is Rawline (sans-serif), with sensible web-safe fallbacks.</p>
+      <div class="nextds-styles__typo">
+        <p class="nextds-styles__row"><span>Display · 3rem</span>      <span class="nextds-styles__sample nextds-styles__sample--display">Build accessible products</span></p>
+        <p class="nextds-styles__row"><span>Title XL · 2.25rem</span>  <span class="nextds-styles__sample nextds-styles__sample--xl">Find a public service</span></p>
+        <p class="nextds-styles__row"><span>Title LG · 1.75rem</span>  <span class="nextds-styles__sample nextds-styles__sample--lg">Section heading</span></p>
+        <p class="nextds-styles__row"><span>Title MD · 1.375rem</span> <span class="nextds-styles__sample nextds-styles__sample--md">Subsection heading</span></p>
+        <p class="nextds-styles__row"><span>Lead · 1.25rem</span>      <span class="nextds-styles__sample nextds-styles__sample--lead">A lead paragraph introduces the topic.</span></p>
+        <p class="nextds-styles__row"><span>Body · 1rem</span>         <span class="nextds-styles__sample">Body copy is used for most page content.</span></p>
+        <p class="nextds-styles__row"><span>Body SM · 0.875rem</span>  <span class="nextds-styles__sample nextds-styles__sample--small">Small print and helper text.</span></p>
+      </div>
+    </section>
+  [/#if]
+
+  [#if configuration.showSpace]
+    <section class="nextds-styles__section">
+      <h2 class="nextds-styles__heading">Spacing scale</h2>
+      <p class="nextds-styles__text">Eight spacing tokens compose every layout.</p>
+      <ul class="nextds-styles__spacing">
+        <li><span>xs · 0.25rem</span><span class="nextds-styles__bar" style="width:0.25rem"></span></li>
+        <li><span>s · 0.5rem</span>  <span class="nextds-styles__bar" style="width:0.5rem"></span></li>
+        <li><span>m · 1rem</span>    <span class="nextds-styles__bar" style="width:1rem"></span></li>
+        <li><span>l · 1.5rem</span>  <span class="nextds-styles__bar" style="width:1.5rem"></span></li>
+        <li><span>xl · 2rem</span>   <span class="nextds-styles__bar" style="width:2rem"></span></li>
+        <li><span>2xl · 3rem</span>  <span class="nextds-styles__bar" style="width:3rem"></span></li>
+        <li><span>3xl · 4rem</span>  <span class="nextds-styles__bar" style="width:4rem"></span></li>
+      </ul>
+    </section>
+  [/#if]
+
+  [#if configuration.showFocus]
+    <section class="nextds-styles__section">
+      <h2 class="nextds-styles__heading">Focus ring (dashed)</h2>
+      <p class="nextds-styles__text">NextDS focus is a <strong>4px dashed</strong> outline with <strong>4px offset</strong> in high-contrast gold (<code>#C98C00</code>) — Tab through the controls below to see it.</p>
+      <div class="nextds-styles__focus-demo">
+        <a href="#" class="nextds-styles__focus-link">Tab me — link</a>
+        <button type="button" class="nextds-styles__focus-btn">Tab me — button</button>
+        <input type="text" class="nextds-styles__focus-input" placeholder="Tab me — input"/>
+      </div>
+    </section>
+  [/#if]
+</div>

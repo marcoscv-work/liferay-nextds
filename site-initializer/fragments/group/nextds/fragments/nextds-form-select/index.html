@@ -1,0 +1,17 @@
+<div class="nextds-input-group">
+  <label class="nextds-label" for="nextds-select">
+    <span data-lfr-editable-id="label" data-lfr-editable-type="text">Select option</span>
+    [#if configuration.required]<span class="nextds-label__required" aria-hidden="true"> *</span>[/#if]
+  </label>
+  [#if configuration.showHint]
+    <p class="nextds-hint" data-lfr-editable-id="hint" data-lfr-editable-type="text">Choose one option from the list.</p>
+  [/#if]
+  <div class="nextds-select-wrap">
+    <select id="nextds-select" class="nextds-select" [#if configuration.required]required[/#if]>
+      <option value="">Select an option</option>
+      <option value="a">Option A</option>
+      <option value="b">Option B</option>
+      <option value="c">Option C</option>
+    </select>
+  </div>
+</div>

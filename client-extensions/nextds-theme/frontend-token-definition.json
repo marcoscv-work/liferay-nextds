@@ -1,0 +1,122 @@
+{
+    "frontendTokenCategories": [
+        {
+            "label": "Brand",
+            "name": "brand",
+            "frontendTokenSets": [
+                {
+                    "label": "Primary (Gov)",
+                    "name": "primary",
+                    "frontendTokens": [
+                        {"defaultValue": "#1351B4", "editorType": "ColorPicker", "label": "Primary",        "mappings": [{"type": "cssVariable", "value": "nextds-primary"}],        "name": "nextdsPrimary",     "type": "String"},
+                        {"defaultValue": "#0C326F", "editorType": "ColorPicker", "label": "Primary dark",   "mappings": [{"type": "cssVariable", "value": "nextds-primary-dark"}],   "name": "nextdsPrimaryDark", "type": "String"},
+                        {"defaultValue": "#2670E8", "editorType": "ColorPicker", "label": "Primary light",  "mappings": [{"type": "cssVariable", "value": "nextds-primary-light"}],  "name": "nextdsPrimaryLight","type": "String"},
+                        {"defaultValue": "#C5D4EB", "editorType": "ColorPicker", "label": "Primary lighter","mappings": [{"type": "cssVariable", "value": "nextds-primary-lighter"}],"name": "nextdsPrimaryLighter","type": "String"},
+                        {"defaultValue": "#DDEFF2", "editorType": "ColorPicker", "label": "Primary alt",    "mappings": [{"type": "cssVariable", "value": "nextds-primary-alt"}],    "name": "nextdsPrimaryAlt",  "type": "String"}
+                    ]
+                },
+                {
+                    "label": "Secondary (Accent)",
+                    "name": "secondary",
+                    "frontendTokens": [
+                        {"defaultValue": "#168821", "editorType": "ColorPicker", "label": "Secondary",      "mappings": [{"type": "cssVariable", "value": "nextds-secondary"}],      "name": "nextdsSecondary",   "type": "String"},
+                        {"defaultValue": "#FFCD07", "editorType": "ColorPicker", "label": "Highlight",      "mappings": [{"type": "cssVariable", "value": "nextds-highlight"}],      "name": "nextdsHighlight",   "type": "String"}
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Neutrals",
+            "name": "neutrals",
+            "frontendTokenSets": [
+                {
+                    "label": "Greys",
+                    "name": "greys",
+                    "frontendTokens": [
+                        {"defaultValue": "#FFFFFF", "editorType": "ColorPicker", "label": "White",          "mappings": [{"type": "cssVariable", "value": "nextds-white"}],         "name": "nextdsWhite",      "type": "String"},
+                        {"defaultValue": "#F8F8F8", "editorType": "ColorPicker", "label": "Pure 1",         "mappings": [{"type": "cssVariable", "value": "nextds-pure-1"}],        "name": "nextdsPure1",      "type": "String"},
+                        {"defaultValue": "#EDEDED", "editorType": "ColorPicker", "label": "Pure 5",         "mappings": [{"type": "cssVariable", "value": "nextds-pure-5"}],        "name": "nextdsPure5",      "type": "String"},
+                        {"defaultValue": "#CCCCCC", "editorType": "ColorPicker", "label": "Pure 20",        "mappings": [{"type": "cssVariable", "value": "nextds-pure-20"}],       "name": "nextdsPure20",     "type": "String"},
+                        {"defaultValue": "#888888", "editorType": "ColorPicker", "label": "Pure 50",        "mappings": [{"type": "cssVariable", "value": "nextds-pure-50"}],       "name": "nextdsPure50",     "type": "String"},
+                        {"defaultValue": "#555555", "editorType": "ColorPicker", "label": "Pure 70",        "mappings": [{"type": "cssVariable", "value": "nextds-pure-70"}],       "name": "nextdsPure70",     "type": "String"},
+                        {"defaultValue": "#333333", "editorType": "ColorPicker", "label": "Pure 80",        "mappings": [{"type": "cssVariable", "value": "nextds-pure-80"}],       "name": "nextdsPure80",     "type": "String"},
+                        {"defaultValue": "#000000", "editorType": "ColorPicker", "label": "Pure 100",       "mappings": [{"type": "cssVariable", "value": "nextds-pure-100"}],      "name": "nextdsPure100",    "type": "String"}
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Feedback",
+            "name": "feedback",
+            "frontendTokenSets": [
+                {
+                    "label": "Status",
+                    "name": "status",
+                    "frontendTokens": [
+                        {"defaultValue": "#168821", "editorType": "ColorPicker", "label": "Success",        "mappings": [{"type": "cssVariable", "value": "nextds-success"}],       "name": "nextdsSuccess",    "type": "String"},
+                        {"defaultValue": "#E60000", "editorType": "ColorPicker", "label": "Danger",         "mappings": [{"type": "cssVariable", "value": "nextds-danger"}],        "name": "nextdsDanger",     "type": "String"},
+                        {"defaultValue": "#F2A60D", "editorType": "ColorPicker", "label": "Warning",        "mappings": [{"type": "cssVariable", "value": "nextds-warning"}],       "name": "nextdsWarning",    "type": "String"},
+                        {"defaultValue": "#155BCB", "editorType": "ColorPicker", "label": "Info",           "mappings": [{"type": "cssVariable", "value": "nextds-info"}],          "name": "nextdsInfo",       "type": "String"}
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Focus",
+            "name": "focus",
+            "frontendTokenSets": [
+                {
+                    "label": "Focus",
+                    "name": "focus",
+                    "frontendTokens": [
+                        {"defaultValue": "#FFCD07", "editorType": "ColorPicker", "label": "Focus colour",   "mappings": [{"type": "cssVariable", "value": "nextds-focus-color"}],   "name": "nextdsFocusColor", "type": "String"},
+                        {"defaultValue": "dashed",                                 "label": "Focus style",  "mappings": [{"type": "cssVariable", "value": "nextds-focus-style"}],   "name": "nextdsFocusStyle", "type": "String"}
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Typography",
+            "name": "typography",
+            "frontendTokenSets": [
+                {
+                    "label": "Families",
+                    "name": "fontFamily",
+                    "frontendTokens": [
+                        {"defaultValue": "Rawline, Raleway, Helvetica, Arial, sans-serif", "label": "Font family base",    "mappings": [{"type": "cssVariable", "value": "nextds-font-family-base"}],    "name": "fontFamilyBase",    "type": "String"},
+                        {"defaultValue": "'Roboto Mono', Menlo, monospace",                "label": "Font family mono",    "mappings": [{"type": "cssVariable", "value": "nextds-font-family-mono"}],    "name": "fontFamilyMono",    "type": "String"}
+                    ]
+                },
+                {
+                    "label": "Sizes",
+                    "name": "fontSizes",
+                    "frontendTokens": [
+                        {"defaultValue": "3rem",     "editorType": "Length", "label": "Display (h1)",   "mappings": [{"type": "cssVariable", "value": "nextds-font-size-display"}], "name": "fontSizeDisplay","type": "String"},
+                        {"defaultValue": "2.25rem",  "editorType": "Length", "label": "Title XL (h2)",  "mappings": [{"type": "cssVariable", "value": "nextds-font-size-xl"}],  "name": "fontSizeXl",  "type": "String"},
+                        {"defaultValue": "1.75rem",  "editorType": "Length", "label": "Title LG (h3)",  "mappings": [{"type": "cssVariable", "value": "nextds-font-size-lg"}],  "name": "fontSizeLg",  "type": "String"},
+                        {"defaultValue": "1.375rem", "editorType": "Length", "label": "Title MD (h4)",  "mappings": [{"type": "cssVariable", "value": "nextds-font-size-md"}],  "name": "fontSizeMd",  "type": "String"},
+                        {"defaultValue": "1.125rem", "editorType": "Length", "label": "Title SM (h5)",  "mappings": [{"type": "cssVariable", "value": "nextds-font-size-sm"}],  "name": "fontSizeSm",  "type": "String"},
+                        {"defaultValue": "1rem",     "editorType": "Length", "label": "Body",           "mappings": [{"type": "cssVariable", "value": "nextds-font-size-body"}],"name": "fontSizeBody","type": "String"},
+                        {"defaultValue": "0.875rem", "editorType": "Length", "label": "Body SM",        "mappings": [{"type": "cssVariable", "value": "nextds-font-size-body-sm"}],"name": "fontSizeBodySm","type": "String"},
+                        {"defaultValue": "1.25rem",  "editorType": "Length", "label": "Lead",           "mappings": [{"type": "cssVariable", "value": "nextds-font-size-lead"}],"name": "fontSizeLead","type": "String"}
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Layout",
+            "name": "layout",
+            "frontendTokenSets": [
+                {
+                    "label": "Container",
+                    "name": "container",
+                    "frontendTokens": [
+                        {"defaultValue": "78rem", "editorType": "Length", "label": "Container max (1248px)", "mappings": [{"type": "cssVariable", "value": "nextds-max-width"}],     "name": "maxWidth",     "type": "String"},
+                        {"defaultValue": "4px",   "editorType": "Length", "label": "Radius",                 "mappings": [{"type": "cssVariable", "value": "nextds-radius"}],        "name": "radius",       "type": "String"},
+                        {"defaultValue": "100em", "editorType": "Length", "label": "Radius pill (buttons)",  "mappings": [{"type": "cssVariable", "value": "nextds-radius-pill"}],   "name": "radiusPill",   "type": "String"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

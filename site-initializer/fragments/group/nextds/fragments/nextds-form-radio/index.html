@@ -1,0 +1,13 @@
+<fieldset class="nextds-fieldset">
+  <legend class="nextds-legend">
+    <span data-lfr-editable-id="legend" data-lfr-editable-type="text">Pick a delivery option</span>
+  </legend>
+  [#if configuration.showHint]
+    <p class="nextds-hint" data-lfr-editable-id="hint" data-lfr-editable-type="text">Select one option.</p>
+  [/#if]
+  <div class="nextds-options">
+    <label class="nextds-check"><input type="radio" name="opt" value="standard" checked/><span>Standard delivery</span></label>
+    <label class="nextds-check"><input type="radio" name="opt" value="express"/><span>Express delivery</span></label>
+    <label class="nextds-check"><input type="radio" name="opt" value="pickup"/><span>Pick up at point</span></label>
+  </div>
+</fieldset>

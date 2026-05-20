@@ -1,0 +1,31 @@
+<article class="nextds-card">
+  [#if configuration.showImage]
+    <div class="nextds-card__media">
+      <img data-lfr-editable-id="card-image" data-lfr-editable-type="image" src="[resources:illustration-card.svg]" alt=""/>
+    </div>
+  [/#if]
+  <div class="nextds-card__body">
+    [#if configuration.showTag]
+      <p class="nextds-card__tags"><span class="nextds-tag nextds-tag--info" data-lfr-editable-id="tag" data-lfr-editable-type="text">Topic</span></p>
+    [/#if]
+    <h3 class="nextds-card__title">
+      <a class="nextds-card__link" href="#" data-lfr-editable-id="title-link" data-lfr-editable-type="link">
+        <span data-lfr-editable-id="title" data-lfr-editable-type="text">An article title goes here</span>
+      </a>
+    </h3>
+    <p class="nextds-card__text" data-lfr-editable-id="text" data-lfr-editable-type="rich-text">
+      A short summary helps the visitor decide whether this article is for them.
+    </p>
+    [#if configuration.showMeta]
+      <p class="nextds-card__meta" data-lfr-editable-id="meta" data-lfr-editable-type="text">Published on 14 May 2026</p>
+    [/#if]
+    [#if configuration.showCta]
+      <p class="nextds-card__cta">
+        <a class="nextds-link" href="#" data-lfr-editable-id="cta-link" data-lfr-editable-type="link">
+          <span data-lfr-editable-id="cta-label" data-lfr-editable-type="text">Read more</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        </a>
+      </p>
+    [/#if]
+  </div>
+</article>

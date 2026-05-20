@@ -1,0 +1,65 @@
+<header class="nextds-site-header nextds-site-header--dynamic" data-nextds-site-header role="banner">
+  <div class="nextds-container nextds-site-header__bar">
+    <button type="button" class="nextds-site-header__icon-btn nextds-site-header__burger"
+            data-nextds-burger
+            aria-controls="nextds-site-menu" aria-expanded="false"
+            aria-label="Menu" data-title="Menu" data-tooltip-align="bottom">
+      <span class="nextds-site-header__burger-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+    </button>
+
+    <a class="nextds-site-header__brand" href="/" data-lfr-editable-id="brand-link" data-lfr-editable-type="link">
+      <img class="nextds-site-header__logo" src="[resources:logo-nextds.svg]" alt="NextDS" width="200" height="56"/>
+    </a>
+
+    <div class="nextds-site-header__tools">
+      [#if configuration.showSearch]
+        <button type="button" class="nextds-site-header__icon-btn nextds-site-header__search-toggle"
+                data-nextds-search-toggle
+                aria-controls="nextds-site-search" aria-expanded="false"
+                aria-label="Open search" data-title="Search" data-tooltip-align="bottom">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/><line x1="16.65" y1="16.65" x2="21" y2="21"/>
+          </svg>
+        </button>
+      [/#if]
+      [#if configuration.showSignIn]
+        [#if themeDisplay.isSignedIn()]
+          <a class="nextds-site-header__account" href="${htmlUtil.escape(themeDisplay.getURLSignOut())}"
+             aria-label="Sign out" data-title="Sign out" data-tooltip-align="bottom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span>Sign out</span>
+          </a>
+        [/#if]
+        [#if !themeDisplay.isSignedIn()]
+          <a class="nextds-site-header__account" href="${htmlUtil.escape(themeDisplay.getURLSignIn())}"
+             aria-label="Sign in" data-title="Sign in" data-tooltip-align="bottom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span>Sign in</span>
+          </a>
+        [/#if]
+      [/#if]
+    </div>
+  </div>
+
+  [#if configuration.showSearch]
+    <div id="nextds-site-search" class="nextds-site-header__search-overlay" data-nextds-search hidden>
+      <div class="nextds-container nextds-site-header__search-row">
+        <div class="nextds-site-header__search-form" data-nextds-search-host>
+          <lfr-widget-search-bar></lfr-widget-search-bar>
+        </div>
+        <button type="button" class="nextds-site-header__icon-btn nextds-site-header__search-close" data-nextds-search-close
+                aria-label="Close search" data-title="Close" data-tooltip-align="bottom">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  [/#if]
+
+  <nav id="nextds-site-menu" class="nextds-site-header__menu" data-nextds-menu aria-label="Main navigation" hidden>
+    <div class="nextds-container">
+      <lfr-widget-nav></lfr-widget-nav>
+    </div>
+  </nav>
+</header>

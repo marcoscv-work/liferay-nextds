@@ -1,0 +1,24 @@
+{
+    "fieldSets": [
+        {
+            "label": "Tag",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "default",
+                    "label": "Variant",
+                    "name": "variant",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "default",  "label": "Default"},
+                            {"value": "neutral",  "label": "Neutral"},
+                            {"value": "selected", "label": "Selected"}
+                        ]
+                    }
+                },
+                {"defaultValue": "false", "label": "Removable", "name": "removable", "type": "checkbox"}
+            ]
+        }
+    ]
+}

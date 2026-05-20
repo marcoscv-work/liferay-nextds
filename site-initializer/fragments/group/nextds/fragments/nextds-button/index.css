@@ -1,0 +1,128 @@
+/* NextDS Button — pill-shape, official Next-DS button hierarchy
+ *   primary    → filled --interactive (Blue Warm Vivid 70 #1351b4)
+ *   secondary  → outlined --interactive (white surface)
+ *   tertiary   → text-only --interactive (transparent)
+ *   block      → modifier, full width
+ *   success    → filled --success
+ *   danger     → filled --danger
+ *
+ * All colours are pinned to OFFICIAL Next-DS tokens so a theme
+ * override on the primitives propagates here automatically.
+ */
+.nextds-button {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space-s, 0.5rem);
+  font-family: inherit; font-weight: var(--font-weight-semi-bold, 600); line-height: var(--font-line-height-medium, 1.5);
+  border: var(--surface-width-sm, 1px) solid transparent;
+  border-radius: var(--nextds-radius-pill, 100em);
+  cursor: pointer; text-align: center;
+  box-sizing: border-box;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+/* gov.br / Next-DS: buttons NEVER underline, regardless of variant or state.
+ * Without this the theme's global `a { text-decoration: underline }` leaks
+ * onto button-as-anchor :link/:visited (matching specificity). */
+.nextds-button,
+.nextds-button:link,
+.nextds-button:visited,
+.nextds-button:hover,
+.nextds-button:focus,
+.nextds-button:active { text-decoration: none; }
+.nextds-button--sm { font-size: 0.875rem; padding: 0.375rem var(--space-m, 1rem);   min-height: 2rem;   }
+.nextds-button--md { font-size: 1rem;     padding: 0.5rem  var(--space-l, 1.25rem); min-height: 2.5rem; }
+.nextds-button--lg { font-size: 1.125rem; padding: 0.625rem var(--space-xl, 1.5rem); min-height: 3rem; }
+
+/* --- Primary --- filled blue */
+.nextds-button--primary,
+.nextds-button--primary:link,
+.nextds-button--primary:visited {
+  background-color: var(--color-primary-default, #1351b4);
+  color: var(--color-secondary-01, #FFFFFF);
+  border-color: var(--color-primary-default, #1351b4);
+}
+.nextds-button--primary:hover {
+  background-color: var(--color-primary-darken-01, #0c326f);
+  border-color: var(--color-primary-darken-01, #0c326f);
+  color: var(--color-secondary-01, #FFFFFF);
+  text-decoration: none;
+}
+.nextds-button--primary:active {
+  background-color: var(--color-primary-darken-02, #071d41);
+  border-color: var(--color-primary-darken-02, #071d41);
+}
+
+/* --- Secondary --- outlined */
+.nextds-button--secondary,
+.nextds-button--secondary:link,
+.nextds-button--secondary:visited {
+  background-color: var(--color-secondary-01, #FFFFFF);
+  color: var(--color-primary-default, #1351b4);
+  border-color: var(--color-primary-default, #1351b4);
+}
+.nextds-button--secondary:hover {
+  background-color: var(--color-primary-pastel-02, #dbe8fb);
+  color: var(--color-primary-darken-01, #0c326f);
+  border-color: var(--color-primary-darken-01, #0c326f);
+  text-decoration: none;
+}
+.nextds-button--secondary:active {
+  background-color: var(--color-primary-pastel-01, #c5d4eb);
+  color: var(--color-primary-darken-02, #071d41);
+}
+
+/* --- Tertiary (ghost) --- text only */
+.nextds-button--ghost,
+.nextds-button--ghost:link,
+.nextds-button--ghost:visited {
+  background-color: transparent;
+  color: var(--color-primary-default, #1351b4);
+  border-color: transparent;
+}
+.nextds-button--ghost:hover {
+  background-color: var(--color-primary-pastel-02, #dbe8fb);
+  color: var(--color-primary-darken-01, #0c326f);
+  text-decoration: none;
+}
+.nextds-button--ghost:active {
+  background-color: var(--color-primary-pastel-01, #c5d4eb);
+  color: var(--color-primary-darken-02, #071d41);
+}
+
+/* --- Success --- */
+.nextds-button--success,
+.nextds-button--success:link,
+.nextds-button--success:visited {
+  background-color: var(--color-highlight, #268744);
+  color: var(--color-secondary-01, #FFFFFF);
+  border-color: var(--color-highlight, #268744);
+}
+.nextds-button--success:hover {
+  background-color: #1d6634;
+  border-color: #1d6634;
+  color: var(--color-secondary-01, #FFFFFF);
+  text-decoration: none;
+}
+
+/* --- Danger --- */
+.nextds-button--danger,
+.nextds-button--danger:link,
+.nextds-button--danger:visited {
+  background-color: var(--danger, #E52207);
+  color: var(--color-secondary-01, #FFFFFF);
+  border-color: var(--danger, #E52207);
+}
+.nextds-button--danger:hover {
+  background-color: #B50901;
+  border-color: #B50901;
+  color: var(--color-secondary-01, #FFFFFF);
+  text-decoration: none;
+}
+
+/* Disabled */
+.nextds-button[aria-disabled="true"],
+.nextds-button[aria-disabled="true"]:hover,
+.nextds-button[aria-disabled="true"]:active {
+  background-color: var(--color-secondary-03, #EDEDED);
+  color: var(--color-secondary-06, #888888);
+  border-color: var(--color-secondary-03, #EDEDED);
+  cursor: not-allowed; pointer-events: none;
+}

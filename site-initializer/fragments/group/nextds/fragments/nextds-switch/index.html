@@ -1,0 +1,9 @@
+<div class="nextds-toggle">
+  <input class="nextds-toggle__input" type="checkbox" id="nextds-switch-1" [#if configuration.checked]checked[/#if] />
+  <label class="nextds-toggle__label" for="nextds-switch-1">
+    <span data-lfr-editable-id="label" data-lfr-editable-type="text">Enable notifications</span>
+  </label>
+  [#if configuration.showHint]
+    <p class="nextds-toggle__hint" data-lfr-editable-id="hint" data-lfr-editable-type="text">Receive monthly updates about new components.</p>
+  [/#if]
+</div>

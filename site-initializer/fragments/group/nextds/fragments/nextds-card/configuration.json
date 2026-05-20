@@ -1,0 +1,13 @@
+{
+    "fieldSets": [
+        {
+            "label": "Card",
+            "fields": [
+                {"defaultValue": "true",  "label": "Show image",   "name": "showImage",  "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show tag",     "name": "showTag",    "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show meta",    "name": "showMeta",   "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show CTA",     "name": "showCta",    "type": "checkbox"}
+            ]
+        }
+    ]
+}

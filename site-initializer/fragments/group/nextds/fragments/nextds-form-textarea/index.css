@@ -1,0 +1,20 @@
+.nextds-input-group { margin-block: 1rem; }
+.nextds-label { display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--color-text, #333333); }
+.nextds-label__required { color: var(--color-danger, #E60000); }
+.nextds-hint  { margin: 0 0 0.5rem; font-size: 0.875rem; color: var(--color-text-muted, #555555); }
+.nextds-textarea {
+  display: block; width: 100%; max-width: 42rem; min-height: 6rem;
+  font-family: inherit; font-size: 1rem; line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-border-strong, #888888);
+  border-radius: var(--nextds-radius, 4px);
+  background-color: var(--color-bg, #FFFFFF);
+  color: var(--color-text, #333333);
+  box-sizing: border-box; resize: vertical;
+}
+.nextds-textarea:hover { border-color: var(--color-text-muted, #555555); }
+.nextds-textarea:focus {
+  outline: var(--nextds-focus-width, 4px) var(--nextds-focus-style, dashed) var(--nextds-focus-color, #C98C00);
+  outline-offset: 0;
+  border-color: var(--color-text, #333333);
+}

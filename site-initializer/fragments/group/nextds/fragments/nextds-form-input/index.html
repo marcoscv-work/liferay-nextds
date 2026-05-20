@@ -1,0 +1,17 @@
+[#assign t = configuration.inputType!'text' /]
+[#assign cls = 'nextds-input-group' /]
+[#if configuration.showError][#assign cls = cls + ' nextds-input-group--error' /][/#if]
+
+<div class="${cls}">
+  <label class="nextds-label" for="nextds-input">
+    <span data-lfr-editable-id="label" data-lfr-editable-type="text">Field label</span>
+    [#if configuration.required]<span class="nextds-label__required" aria-hidden="true"> *</span>[/#if]
+  </label>
+  [#if configuration.showHint]
+    <p class="nextds-hint" data-lfr-editable-id="hint" data-lfr-editable-type="text">Short helper text to guide the user.</p>
+  [/#if]
+  <input id="nextds-input" class="nextds-input" type="${t}" [#if configuration.required]required[/#if] />
+  [#if configuration.showError]
+    <p class="nextds-error" role="alert" data-lfr-editable-id="error" data-lfr-editable-type="text">This field is required.</p>
+  [/#if]
+</div>

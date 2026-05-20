@@ -1,0 +1,17 @@
+.nextds-quote {
+  margin: 1.5rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  background-color: var(--color-bg-alt, #F8F8F8);
+  border-left: 4px solid var(--nextds-secondary, #168821);
+  border-radius: 0 var(--nextds-radius, 4px) var(--nextds-radius, 4px) 0;
+}
+.nextds-quote__text {
+  margin: 0;
+  font-size: var(--nextds-font-size-lead, 1.25rem);
+  line-height: 1.5;
+  color: var(--color-text, #333333);
+  font-style: italic;
+}
+.nextds-quote__author { display: block; margin-top: 1rem; }
+.nextds-quote__author-name { margin: 0; font-weight: 700; color: var(--color-text, #333333); }
+.nextds-quote__author-role { margin: 0; color: var(--color-text-muted, #555555); font-size: 0.9375rem; }

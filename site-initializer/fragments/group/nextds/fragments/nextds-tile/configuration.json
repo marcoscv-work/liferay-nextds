@@ -1,0 +1,10 @@
+{
+    "fieldSets": [
+        {
+            "label": "Tile",
+            "fields": [
+                {"defaultValue": "true",  "label": "Show description", "name": "showDesc", "type": "checkbox"}
+            ]
+        }
+    ]
+}

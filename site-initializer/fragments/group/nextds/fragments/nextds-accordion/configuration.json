@@ -1,0 +1,10 @@
+{
+    "fieldSets": [
+        {
+            "label": "Accordion",
+            "fields": [
+                {"defaultValue": "true", "label": "Exclusive", "name": "exclusive", "type": "checkbox"}
+            ]
+        }
+    ]
+}

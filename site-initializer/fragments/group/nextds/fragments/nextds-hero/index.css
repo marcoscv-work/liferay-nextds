@@ -1,0 +1,56 @@
+/* === preview-workaround === */
+.nextds-container { box-sizing: border-box; width: 100%; margin-inline: auto; max-width: var(--nextds-max-width, 78rem); padding-inline: 1rem; }
+@media (min-width: 768px) { .nextds-container { padding-inline: 1.5rem; } }
+/* === end preview-workaround === */
+
+.nextds-hero { padding-block: 3rem; }
+@media (min-width: 768px) { .nextds-hero { padding-block: 4.5rem; } }
+.nextds-hero__inner { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center; }
+@media (min-width: 768px) { .nextds-hero__inner { grid-template-columns: 1.2fr 1fr; gap: 3rem; } }
+
+.nextds-hero__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin: 0 0 0.75rem;
+  color: var(--nextds-secondary, #168821);
+}
+.nextds-hero__title {
+  font-size: clamp(2rem, 1.4rem + 2.4vw, 3rem);
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  color: var(--color-text, #333333);
+}
+.nextds-hero__description {
+  font-size: var(--nextds-font-size-lead, 1.25rem);
+  line-height: 1.5;
+  max-width: 38rem;
+  margin: 0 0 1.5rem;
+  color: var(--color-text, #333333);
+}
+.nextds-hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+.nextds-hero__media img { display: block; width: 100%; height: auto; }
+
+.nextds-hero--default { background-color: var(--color-bg, #FFFFFF); }
+.nextds-hero--tint    { background-color: var(--color-bg-brand-tint, #DDEFF2); }
+.nextds-hero--brand   { background-color: var(--color-brand, #1351B4); color: var(--color-text-inverse, #FFFFFF); }
+.nextds-hero--brand .nextds-hero__title,
+.nextds-hero--brand .nextds-hero__description { color: var(--color-text-inverse, #FFFFFF); }
+.nextds-hero--brand .nextds-hero__eyebrow { color: var(--color-accent, #FFCD07); }
+
+/* Bundled minimal buttons for preview parity */
+.nextds-button {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  font: inherit; font-weight: 600; line-height: 1.5; padding: 0.625rem 1.25rem;
+  border: 1px solid transparent; border-radius: var(--nextds-radius-pill, 100em);
+  text-decoration: none; cursor: pointer;
+}
+.nextds-button--primary   { background-color: var(--color-brand, #1351B4); color: var(--color-text-inverse, #FFFFFF); border-color: var(--color-brand, #1351B4); }
+.nextds-button--primary:hover { background-color: var(--color-brand-hover, #0C326F); border-color: var(--color-brand-hover, #0C326F); color: var(--color-text-inverse, #FFFFFF); text-decoration: none; }
+.nextds-button--secondary { background-color: transparent; color: var(--color-brand, #1351B4); border-color: var(--color-brand, #1351B4); }
+.nextds-button--secondary:hover { background-color: var(--color-bg-brand-tint, #DDEFF2); color: var(--color-brand-hover, #0C326F); }
+.nextds-hero--brand .nextds-button--primary   { background-color: var(--color-text-inverse, #FFFFFF); color: var(--color-brand, #1351B4); border-color: var(--color-text-inverse, #FFFFFF); }
+.nextds-hero--brand .nextds-button--primary:hover { background-color: var(--color-accent, #FFCD07); color: var(--color-brand-hover, #0C326F); border-color: var(--color-accent, #FFCD07); }
+.nextds-hero--brand .nextds-button--secondary { color: var(--color-text-inverse, #FFFFFF); border-color: var(--color-text-inverse, #FFFFFF); }
+.nextds-hero--brand .nextds-button--secondary:hover { background-color: rgba(255,255,255,0.12); color: var(--color-text-inverse, #FFFFFF); }

@@ -1,0 +1,36 @@
+/* === preview-workaround === */
+.nextds-clean-list { list-style: none; margin: 0; padding: 0; }
+.nextds-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+/* === end === */
+
+.nextds-pagination { padding-block: 1rem; }
+.nextds-pagination__list { display: flex; flex-wrap: wrap; gap: 0.25rem; align-items: center; justify-content: center; }
+a.nextds-pagination__link,
+a.nextds-pagination__link:link,
+a.nextds-pagination__link:visited {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.25rem;
+  min-width: 2.5rem; height: 2.5rem; padding: 0 0.75rem;
+  background-color: transparent;
+  color: var(--color-brand, #1351B4);
+  text-decoration: none;
+  font-weight: 600; font-size: 0.9375rem;
+  border-radius: var(--nextds-radius-pill, 100em);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+a.nextds-pagination__link:hover {
+  background-color: var(--color-bg-brand-tint, #DDEFF2);
+  color: var(--color-brand-hover, #0C326F);
+}
+a.nextds-pagination__link.nextds-pagination__link--current,
+a.nextds-pagination__link.nextds-pagination__link--current:link,
+a.nextds-pagination__link.nextds-pagination__link--current:visited,
+a.nextds-pagination__link.nextds-pagination__link--current:hover {
+  background-color: var(--color-brand, #1351B4);
+  color: var(--color-text-inverse, #FFFFFF);
+  cursor: default; font-weight: 700;
+}
+.nextds-pagination__ellipsis {
+  padding: 0 0.5rem;
+  color: var(--nextds-pure-50, #888888);
+  line-height: 2.5rem;
+}

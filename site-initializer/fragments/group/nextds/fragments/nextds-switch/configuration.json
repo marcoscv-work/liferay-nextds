@@ -1,0 +1,11 @@
+{
+    "fieldSets": [
+        {
+            "label": "Switch",
+            "fields": [
+                {"defaultValue": "true",  "label": "Show hint",          "name": "showHint", "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Checked by default", "name": "checked",  "type": "checkbox"}
+            ]
+        }
+    ]
+}

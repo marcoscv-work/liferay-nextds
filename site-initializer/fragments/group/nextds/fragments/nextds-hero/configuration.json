@@ -1,0 +1,27 @@
+{
+    "fieldSets": [
+        {
+            "label": "Hero",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "default",
+                    "label": "Variant",
+                    "name": "variant",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "default", "label": "Default (light)"},
+                            {"value": "brand",   "label": "Brand (primary blue)"},
+                            {"value": "tint",    "label": "Tint (soft blue)"}
+                        ]
+                    }
+                },
+                {"defaultValue": "true",  "label": "Show image",        "name": "showImage", "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show description",  "name": "showDesc",  "type": "checkbox"},
+                {"defaultValue": "true",  "label": "Show primary CTA",  "name": "showCta",   "type": "checkbox"},
+                {"defaultValue": "false", "label": "Show secondary CTA","name": "showCta2",  "type": "checkbox"}
+            ]
+        }
+    ]
+}

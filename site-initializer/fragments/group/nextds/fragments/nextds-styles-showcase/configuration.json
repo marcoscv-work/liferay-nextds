@@ -1,0 +1,13 @@
+{
+    "fieldSets": [
+        {
+            "label": "Styles showcase",
+            "fields": [
+                {"defaultValue": "true", "label": "Show palette",    "name": "showColors", "type": "checkbox"},
+                {"defaultValue": "true", "label": "Show typography", "name": "showTypo",   "type": "checkbox"},
+                {"defaultValue": "true", "label": "Show spacing",    "name": "showSpace",  "type": "checkbox"},
+                {"defaultValue": "true", "label": "Show focus demo", "name": "showFocus",  "type": "checkbox"}
+            ]
+        }
+    ]
+}

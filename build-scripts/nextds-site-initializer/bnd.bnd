@@ -1,0 +1,6 @@
+Bundle-Name: NextDS Site Initializer
+Bundle-SymbolicName: com.nextds.site.initializer
+Bundle-Version: 1.0.0
+Liferay-Site-Initializer-Name: NextDS Design System
+Provide-Capability: liferay.site.initializer
+Web-ContextPath: /site-initializer-nextds

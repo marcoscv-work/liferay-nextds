@@ -1,0 +1,4 @@
+{"fieldSets": [{"label": "Textarea", "fields": [
+    {"defaultValue": "true",  "label": "Show hint", "name": "showHint", "type": "checkbox"},
+    {"defaultValue": "false", "label": "Required",  "name": "required", "type": "checkbox"}
+]}]}

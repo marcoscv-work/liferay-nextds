@@ -1,0 +1,25 @@
+{
+    "fieldSets": [
+        {
+            "label": "Badge",
+            "fields": [
+                {
+                    "dataType": "string",
+                    "defaultValue": "info",
+                    "label": "Variant",
+                    "name": "variant",
+                    "type": "select",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "info",    "label": "Info"},
+                            {"value": "success", "label": "Success"},
+                            {"value": "warning", "label": "Warning"},
+                            {"value": "danger",  "label": "Danger"},
+                            {"value": "neutral", "label": "Neutral"}
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

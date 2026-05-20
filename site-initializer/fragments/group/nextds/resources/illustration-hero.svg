@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="NextDS hero illustration">
+  <rect width="480" height="360" fill="#DDEFF2"/>
+  <g fill="#1351B4">
+    <circle cx="120" cy="180" r="80"/>
+    <rect x="220" y="80" width="180" height="200"/>
+  </g>
+  <g fill="#168821">
+    <rect x="40"  y="280" width="80" height="40"/>
+    <rect x="140" y="260" width="80" height="60"/>
+    <rect x="240" y="240" width="80" height="80"/>
+  </g>
+  <g fill="#FFCD07">
+    <rect x="340" y="320" width="100" height="6"/>
+    <rect x="40"  y="40"  width="60"  height="6"/>
+  </g>
+</svg>

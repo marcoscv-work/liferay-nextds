@@ -1,0 +1,33 @@
+[#assign variant = configuration.variant!'default' /]
+<section class="nextds-hero nextds-hero--${variant}">
+  <div class="nextds-container nextds-hero__inner">
+    <div class="nextds-hero__content">
+      <p class="nextds-hero__eyebrow" data-lfr-editable-id="eyebrow" data-lfr-editable-type="text">Public service</p>
+      <h1 class="nextds-hero__title" data-lfr-editable-id="title" data-lfr-editable-type="text">Build accessible digital products faster</h1>
+      [#if configuration.showDesc]
+        <p class="nextds-hero__description" data-lfr-editable-id="description" data-lfr-editable-type="rich-text">
+          The NextDS gives you components, tokens and patterns ready to ship across every Brazilian public service.
+        </p>
+      [/#if]
+      [#if configuration.showCta || configuration.showCta2]
+        <div class="nextds-hero__actions">
+          [#if configuration.showCta]
+            <a class="nextds-button nextds-button--primary" href="#" data-lfr-editable-id="cta-link" data-lfr-editable-type="link">
+              <span data-lfr-editable-id="cta-label" data-lfr-editable-type="text">Get started</span>
+            </a>
+          [/#if]
+          [#if configuration.showCta2]
+            <a class="nextds-button nextds-button--secondary" href="#" data-lfr-editable-id="cta2-link" data-lfr-editable-type="link">
+              <span data-lfr-editable-id="cta2-label" data-lfr-editable-type="text">Browse components</span>
+            </a>
+          [/#if]
+        </div>
+      [/#if]
+    </div>
+    [#if configuration.showImage]
+      <div class="nextds-hero__media">
+        <img data-lfr-editable-id="hero-image" data-lfr-editable-type="image" src="[resources:illustration-hero.svg]" alt=""/>
+      </div>
+    [/#if]
+  </div>
+</section>
