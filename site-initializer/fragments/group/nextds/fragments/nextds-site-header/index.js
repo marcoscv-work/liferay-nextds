@@ -16,8 +16,15 @@
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
       burger.setAttribute('aria-label', open ? 'Close menu' : 'Menu');
       burger.setAttribute('data-title', open ? 'Close menu' : 'Menu');
-      if (open) menu.removeAttribute('hidden');
-      else      menu.setAttribute('hidden', '');
+      if (open) {
+        menu.removeAttribute('hidden');
+        setTimeout(function () {
+          var first = menu.querySelector('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])');
+          if (first) first.focus();
+        }, 30);
+      } else {
+        menu.setAttribute('hidden', '');
+      }
     }
     function setSearch(open) {
       if (!searchToggle || !searchPanel) return;
