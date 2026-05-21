@@ -95,6 +95,12 @@
   box-shadow: var(--surface-shadow-sm, 0 1px 2px rgba(0,0,0,0.1));
   text-align: left;
 }
+/* Dashed gold focus ring lives on the pill (the visible container) when the
+ * inner <input> is focused — input itself has outline:0 to avoid double-ring. */
+.nextds-site-header__search-form:focus-within {
+  outline: var(--nextds-focus-width, 4px) var(--nextds-focus-style, dashed) var(--nextds-focus-color, #c2850c);
+  outline-offset: var(--nextds-focus-offset, 4px);
+}
 .nextds-site-header__search-form,
 .nextds-site-header__search-form * { box-sizing: border-box; }
 
