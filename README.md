@@ -39,6 +39,22 @@ NextDS/
 └── tokens.css                     ← OFFICIAL Next-DS / gov.br token catalogue (reference + embedded into theme)
 ```
 
+## Screenshots
+
+Full-page captures of the site as created by this site initializer on a Liferay DXP master bundle (October 2026), with the CSS theme client extension applied.
+
+### Home
+
+![home page](docs/screenshots/home.png)
+
+### Styles
+
+![styles page](docs/screenshots/styles.png)
+
+### Components
+
+![components page](docs/screenshots/components.png)
+
 ## Quick start
 
 Prerequisite: a running Liferay 7.4.13 / dxp-2024.q4.0 bundle.
